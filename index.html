@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protect Your Digital World</title>
+    <meta name="description" content="A modern cybersecurity awareness platform. Learn about cyber threats and how to stay safe online.">
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Navigation -->
+    <nav id="navbar" aria-label="Main Navigation">
+        <div class="nav-container">
+            <div class="logo"><i class="fa-solid fa-shield-halved glow-text-blue" aria-hidden="true"></i> CyberSafe</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#threats">Threats</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header id="home" class="hero section">
+        <!-- Matrix/Binary Background Canvas -->
+        <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+            <h1 class="glitch">Protect Your Digital World</h1>
+            <p class="subtitle" aria-live="polite"><span id="typewriter"></span><span class="cursor" aria-hidden="true">&nbsp;</span></p>
+            <div class="hero-buttons">
+                <a href="#threats" class="btn btn-primary">Explore Threats</a>
+                <a href="#tips" class="btn btn-secondary">Get Protected</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="container reveal">
+                <h2 id="about-heading" class="section-title">What is <span class="glow-text-green">Cybersecurity?</span></h2>
+                <div class="about-grid">
+                    <article class="about-text glass-card">
+                        <p>Cybersecurity is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security or electronic information security.</p>
+                        <p>In our modern daily lives, everything is connected. From banking to socializing, our digital footprint is everywhere. Implementing strong security measures is vital to protect against identity theft, financial loss, or significant data breaches.</p>
+                    </article>
+                    <aside class="about-features" aria-label="Key Features">
+                        <section class="feature-card glass-card">
+                            <i class="fa-solid fa-lock glow-text-blue" aria-hidden="true"></i>
+                            <h3>Data Privacy</h3>
+                            <p>Protecting sensitive information from unauthorized access.</p>
+                        </section>
+                        <section class="feature-card glass-card">
+                            <i class="fa-solid fa-user-secret glow-text-purple" aria-hidden="true"></i>
+                            <h3>Anonymity</h3>
+                            <p>Keeping your online identity and habits safe from tracking.</p>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Threat Cards Section -->
+        <section id="threats" class="section" aria-labelledby="threats-heading">
+            <div class="container reveal">
+                <h2 id="threats-heading" class="section-title">Common <span class="glow-text-purple">Cyber Threats</span></h2>
+                <div class="threats-grid">
+                    <!-- Phishing -->
+                    <article class="threat-card glass-card hover-glow-purple">
+                        <i class="fa-solid fa-fish" aria-hidden="true"></i>
+                        <h3>Phishing</h3>
+                        <p>Deceptive emails or messages designed to trick you into revealing sensitive information like passwords or credit card numbers.</p>
+                    </article>
+                    <!-- Malware -->
+                    <article class="threat-card glass-card hover-glow-green">
+                        <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                        <h3>Malware</h3>
+                        <p>Malicious software including viruses, worms, and spyware designed to cause damage to a computer, server, or network.</p>
+                    </article>
+                    <!-- Ransomware -->
+                    <article class="threat-card glass-card hover-glow-blue">
+                        <i class="fa-solid fa-file-shield" aria-hidden="true"></i>
+                        <h3>Ransomware</h3>
+                        <p>A type of malware that locks and encrypts your data, demanding payment (ransom) to restore your access.</p>
+                    </article>
+                    <!-- Password Attacks -->
+                    <article class="threat-card glass-card hover-glow-purple">
+                        <i class="fa-solid fa-key" aria-hidden="true"></i>
+                        <h3>Password Attacks</h3>
+                        <p>Attempts by hackers to continuously guess or crack a user's password to gain unauthorized access to an account or system.</p>
+                    </article>
+                    <!-- Social Engineering -->
+                    <article class="threat-card glass-card hover-glow-green">
+                        <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+                        <h3>Social Engineering</h3>
+                        <p>Psychological manipulation of people into performing actions or divulging confidential personal information.</p>
+                    </article>
+                    <!-- Data Breaches -->
+                    <article class="threat-card glass-card hover-glow-blue">
+                        <i class="fa-solid fa-database" aria-hidden="true"></i>
+                        <h3>Data Breaches</h3>
+                        <p>An incident where secure information is accessed without authorization, leading to exposed confidential data.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Counters Section -->
+        <section id="stats" class="section stats-section" aria-label="Live Statistics">
+            <div class="container reveal">
+                <div class="stats-grid">
+                    <figure class="stat-item glass-card">
+                        <h3 class="counter" data-target="5000">0</h3><span class="plus" aria-hidden="true">+</span>
+                        <figcaption>Attacks Blocked</figcaption>
+                    </figure>
+                    <figure class="stat-item glass-card">
+                        <h3 class="counter" data-target="10000">0</h3><span class="plus" aria-hidden="true">+</span>
+                        <figcaption>Users Protected</figcaption>
+                    </figure>
+                    <figure class="stat-item glass-card">
+                        <h3 class="counter" data-target="350">0</h3><span class="plus" aria-hidden="true">+</span>
+                        <figcaption>Threats Detected</figcaption>
+                    </figure>
+                    <figure class="stat-item glass-card">
+                        <h3 class="counter" data-target="99">0</h3><span class="plus" aria-hidden="true">%</span>
+                        <figcaption>Success Rate</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Tips Section -->
+        <section id="tips" class="section" aria-labelledby="tips-heading">
+            <div class="container reveal">
+                <h2 id="tips-heading" class="section-title">Essential <span class="glow-text-blue">Safety Tips</span></h2>
+                <div class="tips-grid">
+                    <article class="tip-card glass-card hover-glow-green">
+                        <i class="fa-solid fa-fingerprint glow-text-green" aria-hidden="true"></i>
+                        <h4>Use Strong Passwords</h4>
+                        <p>Combine letters, numbers, and symbols. Avoid common dictionary words or easily guessable personal info.</p>
+                    </article>
+                    <article class="tip-card glass-card hover-glow-blue">
+                        <i class="fa-solid fa-mobile-screen-button glow-text-blue" aria-hidden="true"></i>
+                        <h4>Enable 2FA</h4>
+                        <p>Add an extra layer of security to your accounts by requiring a second form of verification.</p>
+                    </article>
+                    <article class="tip-card glass-card hover-glow-purple">
+                        <i class="fa-solid fa-link-slash glow-text-purple" aria-hidden="true"></i>
+                        <h4>Avoid Suspicious Links</h4>
+                        <p>Don't click links in unsolicited emails or texts. Always verify the source of the message.</p>
+                    </article>
+                    <article class="tip-card glass-card hover-glow-green">
+                        <i class="fa-solid fa-arrows-rotate glow-text-green" aria-hidden="true"></i>
+                        <h4>Update Regularly</h4>
+                        <p>Keep your OS, browsers, and applications updated to regularly patch security vulnerabilities.</p>
+                    </article>
+                    <article class="tip-card glass-card hover-glow-blue">
+                        <i class="fa-solid fa-shield-virus glow-text-blue" aria-hidden="true"></i>
+                        <h4>Use Antivirus</h4>
+                        <p>Install reliable security software and run system scans to intercept threats early.</p>
+                    </article>
+                    <article class="tip-card glass-card hover-glow-purple">
+                        <i class="fa-solid fa-user-ninja glow-text-purple" aria-hidden="true"></i>
+                        <h4>Never Share OTPs</h4>
+                        <p>Never share your One-Time Passwords with anyone, not even official customer support personnel.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section" aria-labelledby="faq-heading">
+            <div class="container reveal">
+                <h2 id="faq-heading" class="section-title">Frequently Asked <span class="glow-text-green">Questions</span></h2>
+                <div class="faq-container">
+                    <article class="faq-item glass-card">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+                            What is phishing?
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div id="faq1" class="faq-answer" role="region">
+                            <p>Phishing is a cybercrime in which a target is contacted by email, telephone, or text message by someone posing as a legitimate institution to lure individuals into providing sensitive data such as personally identifiable information, banking and credit card details, and passwords.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item glass-card">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+                            How to create a strong password?
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div id="faq2" class="faq-answer" role="region">
+                            <p>A strong password should be at least 12 characters long and include a mix of uppercase and lowercase letters, numbers, and symbols. Using a generated passphrase (e.g., "Correct-Horse-Battery-Staple") is often secure and memorable. Use a password manager to keep track of them.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item glass-card">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+                            What is malware?
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div id="faq3" class="faq-answer" role="region">
+                            <p>Malware, short for malicious software, refers to any intrusive software developed by cybercriminals (often called hackers) to steal data and damage or destroy computers and computer systems.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item glass-card">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+                            Why is cybersecurity important?
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div id="faq4" class="faq-answer" role="region">
+                            <p>With more of our personal and financial information stored online, strong cybersecurity measures are essential to protect against data theft, identity fraud, and severe financial and reputational damage to individuals and organizations.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <div class="container reveal">
+                <h2 id="contact-heading" class="section-title">Get in <span class="glow-text-blue">Touch</span></h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form glass-card" id="contactForm">
+                        <fieldset style="border:none; padding:0; margin:0;">
+                            <legend class="sr-only" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;">Contact Information</legend>
+                            <div class="input-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                                <i class="fa-solid fa-user icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                                <i class="fa-solid fa-envelope icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="message" required placeholder=" " rows="5"></textarea>
+                                <label for="message">Your Message</label>
+                                <i class="fa-solid fa-message icon" aria-hidden="true"></i>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-shield-halved glow-text-blue" aria-hidden="true"></i> CyberSafe</h3>
+                <p>Empowering users with the knowledge to navigate the digital world safely and securely.</p>
+            </div>
+            <nav class="footer-col" aria-label="Footer Navigation">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#threats">Threats</a></li>
+                    <li><a href="#tips">Safety Tips</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <div class="social-links" aria-label="Social Media Links">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CyberSafe. All rights reserved. Built for Cybersecurity Awareness.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
